@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="./background.js"></script>
+        <style>
+            button {
+                height: 30px;
+                width: 30px;
+                outline: none;
+            }
+            #container {
+                height: 240px;
+                width: 240px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>시간 설정</h1>
+            <button id="setRandAlarm" style="width:200px">랜덤</button>
+            <button id="set5minAlarm" value='5' style="width:200px">5분</button>
+            <button id="set15minAlarm" value='15' style="width:200px">15분</button>
+            <button id="set30minAlarm"value='30' style="width:200px">30분</button>
+            <button id="set30minAlarm"value='30' style="width:200px">30분</button>
+            <button id="set1HourAlarm"value='60' style="width:200px">1시간</button>
+            <button id="set2HourAlarm"value='120' style="width:200px">2시간</button>
+            <button id="setInstantAlarm" value='0.1' style="width:200px">즉시(test)</button>
+        </div>
+        <script src="./popup.js"></script>
+    </body>
+</html>
