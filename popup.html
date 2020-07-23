@@ -3,30 +3,54 @@
     <head>
         <meta charset="utf-8">
         <script type="text/javascript" src="./background.js"></script>
-        <style>
-            button {
-                height: 30px;
-                width: 30px;
-                outline: none;
-            }
-            #container {
-                height: 240px;
-                width: 240px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link rel="stylesheet" href="popup.css">
     </head>
     <body>
         <div id="container">
-            <h1>시간 설정</h1>
-            <button id="setRandAlarm" style="width:200px">랜덤</button>
-            <button id="set5minAlarm" value='5' style="width:200px">5분</button>
-            <button id="set15minAlarm" value='15' style="width:200px">15분</button>
-            <button id="set30minAlarm"value='30' style="width:200px">30분</button>
-            <button id="set30minAlarm"value='30' style="width:200px">30분</button>
-            <button id="set1HourAlarm"value='60' style="width:200px">1시간</button>
-            <button id="set2HourAlarm"value='120' style="width:200px">2시간</button>
-            <button id="setInstantAlarm" value='0.1' style="width:200px">즉시(test)</button>
+            <p id="description">Settings</p>
+            <!-- <div id="slide_show">
+                <div id="tmp">
+                    <button id="setRandAlarm" style="width:200px">랜덤</button>
+                    <button id="set5minAlarm" value="5" style="width:200px">5분</button>
+                    <button id="set15minAlarm" value="15" style="width:200px">15분</button>
+                    <button id="set30minAlarm"value="30" style="width:200px">30분</button>
+                    <button id="set1HourAlarm"value="60" style="width:200px">1시간</button>
+                    <button id="set2HourAlarm"value="120" style="width:200px">2시간</button>
+                    <button id="setInstantAlarm" value="0.1" style="width:200px">즉시(test)</button>
+                </div>
+            </div> -->
+            <div class="slick-track">
+                <div class="slick-item"> <p class="timeText">5</p> <p class="minText">min</p> </div>
+                <div class="slick-item"> <p class="timeText">15</p> <p class="minText">min</p> </div>
+                <div class="slick-item"> <p class="timeText">30</p>  <p class="minText">min</p> </div>
+                <div class="slick-item"> <p class="timeText">60</p>  <p class="minText">min</p> </div>
+                <div class="slick-item"> <p class="timeText">120</p>  <p class="minText">min</p> </div>
+            </div>
+            <span id="facts">5분마다<br>나에게 보내는 팩폭</span>
+
+            <ul id="myMessageList">
+            </ul>
+            <div id="inputContainer">
+                <form>
+                    <!-- <label for="newMessageBtn">메세지 입력</label> -->
+                    <input type="text" id ="newMessageInput" placeholder="새롭게 입력해볼래?" maxlength="11">
+                    <span id="textWatcher">0/11</span>
+                    <button id="newMessageBtn">+</button>
+                </form>
+            </div>
+            <button id="closeBtn">허리피러갑시다!</button>
         </div>
+        <script
+            src="https://code.jquery.com/jquery-1.11.0.min.js"
+            integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+            integrity="sha256-HmfY28yh9v2U4HfIXC+0D6HCdWyZI42qjaiCFEJgpo0="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
         <script src="./popup.js"></script>
     </body>
 </html>

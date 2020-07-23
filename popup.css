@@ -1,0 +1,198 @@
+#container {
+    width: 240px;
+    height: 540px;
+}
+
+#description {
+    margin-top: 27px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#tmp {
+    display: none;
+}
+#facts {
+    display: inline-block;
+    margin-top: 28px;
+    font-size: 16px;
+    margin-left: 24px;
+    font-weight: bold;
+}
+#myMessageList{
+    padding-left: 0;
+}
+#myMessageList li {
+    text-align: left;
+}
+.slick-track{
+    margin-top: 20px;
+    /* height: 150px; */
+    /* width: 240px; */
+}
+
+.slick-item{
+    text-align: center;
+    width: 110px;
+    /* height: 110px; */
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+}
+.timeText{
+    display: inline;
+    /* position: relative; */
+    /* left: 5px; */
+    font-size: 80px;
+}
+.minText{
+    display: inline;
+    position: absolute;
+    top: 70px;
+    font-weight: 900;
+    font-size: 10px;
+}
+
+#inputContainer {
+    width: 207px;
+    height: 28px;
+    border: 1px solid #A7A7A7;
+    border-radius: 14px;
+    margin: 0 auto;
+    line-height: 28px;
+}
+form{
+    padding: 0;
+}
+
+#newMessageInput {
+    margin-left: 10px;
+    width: 120px;
+    height: 14px;
+    font-size: 12px;
+    border: 0;
+}
+#textWatcher{
+    display: inline-block;
+    padding: 0;
+    line-height: 12px;
+    font-size: 12px;
+    color: #A7A7A7;
+}
+#newMessageInput:focus {
+    border: 0;
+}
+#newMessageBtn {
+    display: inline-block;
+    padding: 0;
+    padding-top: 1px;
+    padding-right: 1px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 8px;
+    border-radius: 7px;
+    border: none;
+    font-size: 14px;
+    line-height: 9px;
+    background-color: #3169F7;
+    color: white;
+}
+#newMessageBtn:hover {
+    background-color: cornflowerblue;
+}
+
+
+#closeBtn {
+    display: block;
+    position: fixed;
+    left:59px;
+    right:54px;
+    bottom: 19px;
+    margin: 0 auto;
+    /* margin-top: 50px; */
+    border: none;
+    color: white;
+    width: 127px;
+    height: 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #3169F7;
+}
+#closeBtn:hover {
+    background-color: cornflowerblue;
+}
+
+
+
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    /* display: inline-block; */
+    width: 21px;
+    height: 13px;
+    top: 8px;
+    right: 9px;
+    float: right;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 11px;
+    top:1px;
+    left: 1px;
+    /* bottom: 1px; */
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

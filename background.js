@@ -1,13 +1,14 @@
 
+
 chrome.alarms.onAlarm.addListener(function() {
     chrome.browserAction.setBadgeText({text: ''});
     chrome.notifications.create({
         type:     'basic',
         iconUrl:  'stay_hydrated.jpg',
-        title:    'Time to Hydrate',
-        message:  'Everyday I\'m Guzzlin\'!',
+        title:    '허리 펴!',
+        message:  localStorage["message"],
         buttons: [
-          {title: 'Keep it Flowing.'}
+          {title: '폈어요!'}
         ],
         priority: 0});
   });
