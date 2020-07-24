@@ -125,7 +125,44 @@ form{
 }
 
 
+.listItem {
+    color: white;
+    background-color: #3169F7;
+    list-style: none;
+    width: 196px;
+    height: 28px;
+    border: 1px solid #A7A7A7;
+    border-radius: 14px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 11px;
+    line-height: 28px;
+    text-align: left;
+    font-size: 12px;
+}
+.listItem.itemFalse{
+    color : #A7A7A7;
+    background-color : #F0F0F0;
+}
 
+.listItemBtn{
+    display: inline-block;
+    position: relative;
+    bottom: 1.4px;
+    padding: 1px;
+    width: 13px;
+    height: 13px;
+    background-color: #FFFFFF;
+    color:#3169F7;
+    border-radius: 7px;
+    border: none;
+    font-size: 1px;
+    margin-left:6px;
+}
+.listItemBtn.btnFalse{
+    color :#F0F0F0;
+    background-color : #B2B2B2;
+}
 
 
 
