@@ -1,13 +1,10 @@
 # StraightenYourBack
 chrome extension makes notification to straighten your back
 
-
-
-
-### 주요 기능
-알람 메시지 생성 및 삭제
-알람 메시지별 On/Off
-알람 주기 타이머 조절
+## 주요 기능
+1. 알람 메시지 생성 및 삭제
+2. 알람 메시지별 On/Off
+3. 알람 주기 타이머 조절
 
 
 
